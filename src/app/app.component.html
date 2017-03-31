@@ -2,4 +2,5 @@
 <ul *ngFor="let food of foods">
   <li>{{food.name}}</li>
 </ul>
+<app-food-display></app-food-display>
 <app-new-food (newFoodSender)="addFood($event)"></app-new-food>
