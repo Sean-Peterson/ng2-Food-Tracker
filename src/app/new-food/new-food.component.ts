@@ -11,6 +11,7 @@ export class NewFoodComponent implements OnInit {
   ngOnInit() {
   }
   @Output() newFoodSender = new EventEmitter();
+  @Output() calorieSender = new EventEmitter();
 
   formShowing: boolean = false;
 
@@ -22,10 +23,10 @@ export class NewFoodComponent implements OnInit {
     this.formShowing = false;
   }
 
-  submitForm(name: string, details: string ,calories: number) {
-    var newFood: Food = new Food(name, details, calories);
+  submitForm(name: string, details: string , calories: string) {
+    var newFood: Food = new Food(name, details, parseInt(calories));
     this.newFoodSender.emit(newFood);
-
+    this.calorieSender.emit();
   }
 
 

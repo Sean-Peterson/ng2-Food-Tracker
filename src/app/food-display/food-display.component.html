@@ -7,6 +7,7 @@
   <option value="over500">Food over 500 calories</option>
 </select>
 </p>
+
 <div class="food-wells" *ngFor="let food of foods | calorie:filterByCalories">
 
 
@@ -19,4 +20,7 @@
     <button class='btn edit-button' (click)="editButton(food)">Edit!</button>
   </ul>
 </div>
+  <p>
+    Your caloric intake for today is: {{totalCaloricIntake}}
+  </p>
 </div>

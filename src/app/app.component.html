@@ -1,7 +1,7 @@
 <div class="all-elements">
 <h1 id="title">Food Tracker lite</h1>
 <p id="title-description">The quickest and easiest way to keep track of what you eat</p>
-<app-food-display [foods]="foods" (clickSender)="editFood($event)"></app-food-display>
-<app-new-food (newFoodSender)="addFood($event)"></app-new-food>
-<app-edit-food [selectedFood]="selectedFood" (doneButtonClicked)="finishedEditing()"></app-edit-food>
+<app-food-display [foods]="foods" (clickSender)="editFood($event)" (calorieSender)="calorieCounter()" [totalCaloricIntake]="totalCaloricIntake"></app-food-display>
+<app-new-food (newFoodSender)="addFood($event)" (calorieSender)="calorieCounter()"></app-new-food>
+<app-edit-food [selectedFood]="selectedFood" (doneButtonClicked)="finishedEditing()" (calorieSender)="calorieCounter()"></app-edit-food>
 </div>

@@ -14,7 +14,8 @@ export class AppComponent {
     new Food('Taco', 'It was a delicious Chipotle burrito', 466),
   ];
 
-  selectedFood = null;
+  selectedFood: Food = null;
+  totalCaloricIntake: number = null;
 
   addFood(newFood: Food) {
     this.foods.push(newFood);
@@ -26,6 +27,14 @@ export class AppComponent {
 
   finishedEditing() {
     this.selectedFood = null;
+  }
+
+  calorieCounter() {
+    var totalCalories: number = 0;
+    for(var i=0; i < this.foods.length; i++){
+      totalCalories = this.foods[i].calories + totalCalories;
+    }
+    return this.totalCaloricIntake = totalCalories;
   }
 
 }

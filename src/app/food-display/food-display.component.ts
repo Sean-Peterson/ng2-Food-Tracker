@@ -10,9 +10,12 @@ import { CaloriePipe } from '../calorie.pipe';
 export class FoodDisplayComponent implements OnInit {
   constructor() { }
   ngOnInit() {
+    this.calorieSender.emit()
   }
   @Input() foods: Food[];
+  @Input() totalCaloricIntake: number;
   @Output() clickSender = new EventEmitter();
+  @Output() calorieSender = new EventEmitter();
 
   editButton(foodToEdit: Food) {
     this.clickSender.emit(foodToEdit);

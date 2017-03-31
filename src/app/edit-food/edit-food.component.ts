@@ -13,9 +13,11 @@ export class EditFoodComponent implements OnInit {
 
   @Input() selectedFood: Food;
   @Output() doneButtonClicked = new EventEmitter();
+  @Output() calorieSender = new EventEmitter();
 
   finishedEditing(){
     this.doneButtonClicked.emit();
+    this.calorieSender.emit();
   }
 
 }
