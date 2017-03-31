@@ -1,1 +1,49 @@
-/* You can add global styles to this file, and also import other style files */
+
+.edit-button {
+  margin-left: 207px;
+}
+
+.edit-food {
+  margin-top: 30px;
+  margin-left: 250px;
+  text-align: right;
+  margin-right: 250px;
+
+}
+
+.food-display {
+  margin-top: 30px;
+  margin-left: 250px;
+  font-size: 20px;
+}
+
+.food-wells {
+  margin-top: 30px;
+  margin-left: 70px;
+}
+
+.new-food, .edit-food {
+  margin-top: 30px;
+  /*margin-left: 250px;*/
+  margin-right: 250px;
+  text-align: right;
+  font-size: 20px;
+}
+
+.new-food input, .edit-food input {
+  text-align: right;
+}
+
+#title {
+  font-size: 70px;
+  margin-left: 110px;
+}
+
+#title-description {
+  font-size: 30px;
+  margin-left: 180px;
+}
+
+li {
+  list-style: none;
+}
