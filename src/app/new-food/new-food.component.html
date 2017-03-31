@@ -1,18 +1,23 @@
-<button (click)="showForm()">Add Food to your food tracker</button>
-<div class="new-food" *ngIf="formShowing">
+<div class="new-food">
+<button class="btn" (click)="showForm()">Add Food to your food tracker</button>
+<div class="new-food-form" *ngIf="formShowing">
 
-<h1>What food did you just eat?</h1>
+<h3>What food did you just eat?</h3>
   <div>
-    <label>Food Name:</label>
-    <input #newName>
+    <p>Food Name:</p>
+    <input required #newName>
   </div>
+  <br>
   <div>
-   <label>Food description(Where was it from? Was it worth it?):</label>
-   <input #newDetails>
+   <p>Food description(Where was it from? Was it worth it?):</p>
+   <input class="form-control" required #newDetails>
   </div>
+  <br>
   <div class="">
-    <label>Caloric total:</label>
-    <input type="number" #newCalories>
+    <p>Caloric total:</p>
+    <input required type="number" #newCalories>
   </div>
-  <button (click)="submitForm(newName.value, newDetails.value, newCalories.value); newName.value=''; newDetails.value-''; newCalories.value=''; hideForm()">Add</button>
+  <br>
+  <button class="btn" type="submit" (click)="submitForm(newName.value, newDetails.value, newCalories.value); newName.value=''; newDetails.value-''; newCalories.value=''; hideForm()">Add</button>
+</div>
 </div>

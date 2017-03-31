@@ -1,11 +1,13 @@
-<h3>Filter your foods by:
+<div class="food-display">
+
+<p><span id="filter">Filter your foods by:</span>
 <select (change)="onChange($event.target.value)">
   <option value="allFood" selected="selected">All Food</option>
   <option value="under500">Food under 500 calories</option>
   <option value="over500">Food over 500 calories</option>
 </select>
-</h3>
-<div class="food-display" *ngFor="let food of foods | calorie:filterByCalories">
+</p>
+<div class="food-wells" *ngFor="let food of foods | calorie:filterByCalories">
 
 
   <p>
@@ -14,6 +16,7 @@
   <ul>
     <li>Details: {{food.details}}</li>
     <li>Caloric Total: {{food.calories}}</li>
-    <button (click)="editButton(food)">Edit!</button>
+    <button class='btn edit-button' (click)="editButton(food)">Edit!</button>
   </ul>
+</div>
 </div>
