@@ -13,8 +13,8 @@ export class NewFoodComponent implements OnInit {
   @Output() newFoodSender = new EventEmitter();
 
 
-  submitForm(name: string, description: string ,calories: number) {
-    var newFood: Food = new Food(name, description, calories);
+  submitForm(name: string, details: string ,calories: number) {
+    var newFood: Food = new Food(name, details, calories);
     this.newFoodSender.emit(newFood);
 
   }

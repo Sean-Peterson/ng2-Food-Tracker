@@ -5,10 +5,10 @@
   </div>
   <div>
    <label>Food descritpion(Where was it from? Was it worth it?):</label>
-   <input #newDescription>
+   <input #newDetails>
   </div>
   <div class="">
     <label>Caloric total:</label>
     <input type="number" #newCalories>
   </div>
-  <button (click)="submitForm(newName.value, newDescription.value, newCalories.value); newName.value=''; newDescription.value-''; newCalories.value='';">Add</button>
+  <button (click)="submitForm(newName.value, newDetails.value, newCalories.value); newName.value=''; newDetails.value-''; newCalories.value='';">Add</button>
