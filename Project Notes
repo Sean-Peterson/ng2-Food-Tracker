@@ -1,0 +1,33 @@
+As a user...
+
+  Completed: No
+    I want to LOG a food I have eaten by SUBMITTING a FORM with FOOD(model) NAME, CALORIES, and DETAILS.
+
+  Completed: No
+    I want to VIEW a LIST of FOODS I have LOGGED.
+
+  Completed: No
+    I want options to VIEW ALL FOODS, only HIGH-CALORIE FOODS (500+), or only LOWER-CALORIE FOODS (500-)
+
+  Completed: No
+    I want to CLICK a FOOD to EDIT its NAME, CALORIES, or DETAILS.
+
+
+
+Your code will be reviewed for the following objectives:
+
+  Application uses a model to organize data.
+
+  Components are used to create display and behavior for your templates.
+
+  TypeScript is used throughout application; including variable data types.
+
+  Users can create and edit instances of a model.
+
+  Models can be filtered using a pipe.
+
+  Project demonstrates understanding of week's concepts. If prompted, you are able to discuss your code with an instructor using correct terminology.
+
+  Project is in a polished, portfolio-quality state.
+
+  Required functionality was in place by the Friday deadline.
