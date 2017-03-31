@@ -1,3 +1,5 @@
-<h1 *ngFor="let food of foods">
-  {{food.name}}
-</h1>
+<h1>The Meal Tracker</h1>
+<ul *ngFor="let food of foods">
+  <li>{{food.name}}</li>
+</ul>
+<app-new-food (newFoodSender)="addFood($event)"></app-new-food>

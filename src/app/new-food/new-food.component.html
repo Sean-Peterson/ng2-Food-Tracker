@@ -1,0 +1,14 @@
+<h1>What food did you just eat?</h1>
+  <div>
+    <label>Food Name:</label>
+    <input #newName>
+  </div>
+  <div>
+   <label>Food descritpion(Where was it from? Was it worth it?):</label>
+   <input #newDescription>
+  </div>
+  <div class="">
+    <label>Caloric total:</label>
+    <input type="number" #newCalories>
+  </div>
+  <button (click)="submitForm(newName.value, newDescription.value, newCalories.value); newName.value=''; newDescription.value-''; newCalories.value='';">Add</button>
