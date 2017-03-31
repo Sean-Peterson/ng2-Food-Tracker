@@ -1,26 +1,26 @@
 <div class="food-display">
 
-<p><span id="filter">Filter your foods by:</span>
-<select (change)="onChange($event.target.value)">
-  <option value="allFood" selected="selected">All Food</option>
-  <option value="under500">Food under 500 calories</option>
-  <option value="over500">Food over 500 calories</option>
-</select>
-</p>
-
-<div class="food-wells" *ngFor="let food of foods | calorie:filterByCalories">
-
-
-  <p>
-    {{food.name}}
+  <p><span id="filter">Filter your foods by:</span>
+  <select (change)="onChange($event.target.value)">
+    <option value="allFood" selected="selected">All Food</option>
+    <option value="under500">Food under 500 calories</option>
+    <option value="over500">Food over 500 calories</option>
+  </select>
   </p>
-  <ul>
-    <li>Details: {{food.details}}</li>
-    <li>Caloric Total: {{food.calories}}</li>
-    <button class='btn edit-button' (click)="editButton(food)">Edit!</button>
-  </ul>
-</div>
-  <p>
-    Your caloric intake for today is: {{totalCaloricIntake}}
+
+  <div class="food-wells" *ngFor="let food of foods | calorie:filterByCalories">
+
+
+    <p>
+      {{food.name}}
+    </p>
+    <ul>
+      <li>Details: {{food.details}}</li>
+      <li>Caloric Total: {{food.calories}}</li>
+      <button class='btn edit-button' (click)="editButton(food)">Edit!</button>
+    </ul>
+  </div>
+  <p class="food-wells">
+    Your caloric intake for the day is: {{totalCaloricIntake}}
   </p>
 </div>
