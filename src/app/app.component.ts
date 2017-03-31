@@ -11,8 +11,18 @@ export class AppComponent {
     new Food('Burrito', 'It was a delicious Chipotle burrito', 875)
   ];
 
+  selectedFood = null;
+
   addFood(newFood: Food) {
     this.foods.push(newFood);
+  }
+
+  editFood(clickedFood) {
+    this.selectedFood = clickedFood;
+  }
+
+  finishedEditing() {
+    this.selectedFood = null;
   }
 
 }

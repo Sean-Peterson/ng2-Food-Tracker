@@ -1,3 +1,15 @@
-<p>
-  edit-food works!
-</p>
+<div>
+  <div *ngIf="selectedFood">
+    <h3>{{selectedFood.name}}</h3>
+    <br>
+    <h3>Edit Food</h3>
+    <label>Enter Food Name:</label>
+    <input [(ngModel)]="selectedFood.name">
+    <label>Enter Food Details:</label><br>
+    <input [(ngModel)]="selectedFood.details">
+    <br>
+    <label>Enter Calories:</label><br>
+    <input type="number" [(ngModel)]="selectedFood.calories">
+    <button (click)="finishedEditing()">Done</button>
+  </div>
+</div>

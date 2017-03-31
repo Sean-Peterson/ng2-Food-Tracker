@@ -1,4 +1,4 @@
 <h1>The Meal Tracker</h1>
-<app-food-display [foods]="foods"></app-food-display>
+<app-food-display [foods]="foods" (clickSender)="editFood($event)"></app-food-display>
 <app-new-food (newFoodSender)="addFood($event)"></app-new-food>
-<app-edit-food></app-edit-food>
+<app-edit-food [selectedFood]="selectedFood" (doneButtonClicked)="finishedEditing()"></app-edit-food>

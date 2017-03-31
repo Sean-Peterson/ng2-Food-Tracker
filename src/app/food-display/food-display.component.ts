@@ -1,4 +1,4 @@
-import { Component, OnInit, Input} from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { Food } from '../food.model'
 
 @Component({
@@ -11,6 +11,10 @@ export class FoodDisplayComponent implements OnInit {
   ngOnInit() {
   }
   @Input() foods: Food[];
+  @Output() clickSender = new EventEmitter();
 
+  editButton(foodToEdit: Food) {
+    this.clickSender.emit(foodToEdit);
+  }
 
 }

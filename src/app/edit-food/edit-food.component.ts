@@ -7,10 +7,15 @@ import { Food } from '../food.model'
   styleUrls: ['./edit-food.component.css']
 })
 export class EditFoodComponent implements OnInit {
-
   constructor() { }
-
   ngOnInit() {
+  }
+
+  @Input() selectedFood: Food;
+  @Output() doneButtonClicked = new EventEmitter();
+
+  finishedEditing(){
+    this.doneButtonClicked.emit();
   }
 
 }
