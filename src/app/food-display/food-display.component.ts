@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
+import { Food } from '../food.model'
 
 @Component({
   selector: 'app-food-display',
@@ -6,10 +7,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./food-display.component.css']
 })
 export class FoodDisplayComponent implements OnInit {
-
   constructor() { }
-
   ngOnInit() {
   }
+  @Input() foods: Food[];
+
 
 }
