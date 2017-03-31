@@ -1,3 +1,6 @@
+<button (click)="showForm()">Add Food to your food tracker</button>
+<div class="new-food" *ngIf="formShowing">
+
 <h1>What food did you just eat?</h1>
   <div>
     <label>Food Name:</label>
@@ -11,4 +14,5 @@
     <label>Caloric total:</label>
     <input type="number" #newCalories>
   </div>
-  <button (click)="submitForm(newName.value, newDetails.value, newCalories.value); newName.value=''; newDetails.value-''; newCalories.value='';">Add</button>
+  <button (click)="submitForm(newName.value, newDetails.value, newCalories.value); newName.value=''; newDetails.value-''; newCalories.value=''; hideForm()">Add</button>
+</div>

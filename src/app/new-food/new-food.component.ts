@@ -12,6 +12,15 @@ export class NewFoodComponent implements OnInit {
   }
   @Output() newFoodSender = new EventEmitter();
 
+  formShowing: boolean = false;
+
+  showForm() {
+    this.formShowing = true;
+  }
+
+  hideForm() {
+    this.formShowing = false;
+  }
 
   submitForm(name: string, details: string ,calories: number) {
     var newFood: Food = new Food(name, details, calories);
