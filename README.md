@@ -1,6 +1,6 @@
-# MealTracker
+# FoodTracker
 
-Meal Tracker is the result from an Epicodus solo project designed to test my ability to create a site using angular 2. Meal Tracker gives users the ability to track their daily food intake.
+Food Tracker is the result from an Epicodus solo project designed to test my ability to create a site using angular 2. Food Tracker gives users the ability to track their daily food intake.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.0.
 
@@ -26,24 +26,24 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 
   2. Specs
     * Spec 1: User can create and save a food item
-    * Spec 2: User can see a list of the foods that he/she has eaten
-    * Spec 3: User can see a list of foods that he/she has eaten that shows foods above or below 500 cals
-    * Spec 4: User can edit and delete food objects
+    * Spec 2: User can see a list of the foods that he/she has eaten and logged
+    * Spec 3: User can see a list of foods that he/she has logged that shows foods above or below 500 cals
+    * Spec 4: User can edit food entries
 
   3. Integration
     * Initial route with all dependencies in Controller
     * Template/html page for `app.component`
-    * component page for `food-list`
-    * component page for `update-food`
+    * component page for `food-display`
+    * component page for `new-food`
     * component page for `edit-food`
     * model for `food`
     * Pipe for `caloricTotal`
-    * Display all foods on food-display with `food-list` component
-    * Display update food form with `update-food` component
+    * Display all foods on `food-display` component
+    * Display update food form with `edit-food` component
     * Display new food form with `new-food` component
 
   4. UX/UI
-    * Include and modify bootstrap/materialize/etc.
+    * Include and modify bootstrap
     * Develop custom style
 
   5. Polish
