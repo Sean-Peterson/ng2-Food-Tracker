@@ -33,11 +33,12 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
   3. Integration
     * Initial route with all dependencies in Controller
     * Template/html page for `app.component.html`
-    * component page for `food-display`
+    * component page for `food-list`
     * model for `food`
     * Pipe for `caloricTotal`
-    * Display all foods on food-display with `food-display` component
+    * Display all foods on food-display with `food-list` component
     * Display update food form with `update-food` component
+    * Display new food form with `new-food` component
 
   4. UX/UI
     * Include and modify bootstrap/materialize/etc.
