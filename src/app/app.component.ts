@@ -8,10 +8,10 @@ import { Food } from './food.model';
 })
 export class AppComponent {
   foods: Food[] = [
+    new Food('Eggs and Bacon', 'Breakfast of champions', 350),
     new Food('Burrito', 'It was a delicious Chipotle burrito', 875),
-    new Food('Bowl', 'It was a delicious Chipotle burrito', 875),
-    new Food('Churro', 'It was a delicious Chipotle burrito', 466),
-    new Food('Taco', 'It was a delicious Chipotle burrito', 466),
+    new Food('Churro', 'It was a delicious Chipotle churro', 150),
+    new Food('Granola bar', 'Good enough for a snack', 200),
   ];
 
   selectedFood: Food = null;
