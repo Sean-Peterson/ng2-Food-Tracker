@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Food } from './food.model';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app works!';
+  foods: Food[] = [
+    new Food('Burrito', 'It was a delicious Chipotle burrito', 875)
+  ];
+
 }
