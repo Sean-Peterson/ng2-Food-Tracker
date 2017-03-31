@@ -1,9 +1,10 @@
+<h3>Filter your foods by:
 <select (change)="onChange($event.target.value)">
-  <option value="allFood" >All Food</option>
-  <option value="under500" selected="selected">Food under 500 calories</option>
+  <option value="allFood" selected="selected">All Food</option>
+  <option value="under500">Food under 500 calories</option>
   <option value="over500">Food over 500 calories</option>
 </select>
-
+</h3>
 <div class="food-display" *ngFor="let food of foods | calorie:filterByCalories">
 
 
