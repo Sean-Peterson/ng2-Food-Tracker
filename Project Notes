@@ -3,7 +3,7 @@ As a user...
   Completed: CHECK
     I want to LOG a food I have eaten by SUBMITTING a FORM with FOOD(model) NAME, CALORIES, and DETAILS.
 
-  Completed: No
+  Completed: CHECK
     I want to VIEW a LIST of FOODS I have LOGGED.
 
   Completed: No
