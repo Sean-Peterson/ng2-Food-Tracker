@@ -1,27 +1,59 @@
 # MealTracker
 
+Meal Tracker is the result from an Epicodus solo project designed to test my ability to create a site using angular 2. Meal Tracker gives users the ability to track their daily food intake.
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.0.
+
+3/29/17
+
+## Prerequisites
+
+You will need the following properly installed on your computer.
+
+* [Git](https://git-scm.com/)
+* [Node.js](https://nodejs.org/) (with NPM)
+* [Angular CLI](https://ember-cli.com/)
 
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
+## Planning
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive/pipe/service/class/module`.
+  1. Configuration/dependencies
+    * Bootstrap: package.json
+    * All other other dependencies are installed by Angular2 and located in package.json
 
-## Build
+  2. Specs
+    * Spec 1: User can create and save a food item
+    * Spec 2: User can see a list of the foods that he/she has eaten
+    * Spec 3: User can see a list of foods that he/she has eaten that shows foods above or below 500 cals
+    * Spec 4: User can edit and delete food objects
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+  3. Integration
+    * Initial route with all dependencies in Controller
+    * Template/html page for `app.component.html`
+    * component page for `food-display`
+    * model for `food`
+    * Pipe for `caloricTotal`
+    * Display all foods on food-display with `food-display` component
+    * Display update food form with `update-food` component
 
-## Running unit tests
+  4. UX/UI
+    * Include and modify bootstrap/materialize/etc.
+    * Develop custom style
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+  5. Polish
+    * Refactor minor portion of app.component.html, food-display.component.html
+    * Delete unused code
+    * Make README awesome
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-Before running the tests make sure you are serving the app via `ng serve`.
+## Technologies Used
+  * **HTML**: Hypertext Markup Language, a standardized system for tagging text files to achieve font, color, graphic, and hyperlink effects on World Wide Web pages.
+  * **CSS**: The Cascading Style Sheets Specification is a computer language that is used to write formatting instructions.
+  * **JavaScipt**: An object-oriented computer programming language commonly used to create interactive effects within web browsers.
+  * **Angular2**: Angular2 is a JavaScript framework for creating web applications.
+  * **npm**: A NodeJS package manager. You can use it to install node programs. Also, if you use it in development, it makes it easier to specify and link dependencies.
 
 ## Further help
 
